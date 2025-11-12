@@ -791,7 +791,7 @@
     <main class="container">
         <!-- 首页内容 -->
         <section id="home" class="content-section active">
-            <h2 class="section-title">热门</h2>
+            <h2 class="section-title">手机</h2>
             
             <div class="cards-grid">
                 <!-- 游戏卡片1 -->
@@ -838,19 +838,7 @@
                     </div>
                 </div>
                 
-            <div class="card">
-                    <div class="card-content">
-                        <h3 class="card-title">天猫VPN</h3>
-                        <p class="card-desc"></p>
-                        <div class="card-footer">
-                            <div class="card-rating">
-                                <i class="fas fa-star"></i>
-                                
-                            </div>
-                            <a href="https://huixiao666.github.io/pk1124/" class="card-button">查看</a>
-                        </div>
-                    </div>
-                </div> 
+            
                 
             <div class="card">
                     <div class="card-content">
@@ -866,19 +854,7 @@
                     </div>
                 </div>
                 
-            <div class="card">
-                    <div class="card-content">
-                        <h3 class="card-title">Dragonjs加速器</h3>
-                        <p class="card-desc"></p>
-                        <div class="card-footer">
-                            <div class="card-rating">
-                                <i class="fas fa-star"></i>
-                                
-                            </div>
-                            <a href="https://huixiao666.github.io/pk1126/" class="card-button">查看</a>
-                        </div>
-                    </div>
-                </div>
+            
                 
             <div class="card">
                     <div class="card-content">
@@ -894,6 +870,7 @@
                     </div>
                 </div> 
                 
+            
             <div class="card">
                     <div class="card-content">
                         <h3 class="card-title">黑洞加速器</h3>
@@ -908,7 +885,17 @@
                     </div>
                 </div>
                 
-            <div class="card">
+            
+        </div> 
+        </section>
+        
+           <section id="home" class="content-section active">
+            <h2 class="section-title">电脑</h2>
+            
+            <div class="cards-grid">
+                <!-- 游戏卡片2 -->
+                
+                <div class="card">
                     <div class="card-content">
                         <h3 class="card-title">安易加速器</h3>
                         <p class="card-desc"></p>
@@ -922,6 +909,33 @@
                     </div>
                 </div> 
                 
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">天猫VPN</h3>
+                        <p class="card-desc"></p>
+                        <div class="card-footer">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                
+                            </div>
+                            <a href="https://huixiao666.github.io/pk1124/" class="card-button">查看</a>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">Dragonjs加速器</h3>
+                        <p class="card-desc"></p>
+                        <div class="card-footer">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                
+                            </div>
+                            <a href="https://huixiao666.github.io/pk1126/" class="card-button">查看</a>
+                        </div>
+                    </div>
+                </div>
             <div class="card">
                     <div class="card-content">
                         <h3 class="card-title">迷雾通</h3>
@@ -935,6 +949,238 @@
                         </div>
                     </div>
                 </div>
+            
+            <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">ProtonVPN</h3>
+                        <p class="card-desc"></p>
+                        <div class="card-footer">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                
+                            </div>
+                            <a href="https://huixiao666.github.io/pk11211/" class="card-button">查看</a>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">皮卡节点</h3>
+                        <p class="card-desc"></p>
+                        <div class="card-footer">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                
+                            </div>
+                            <a href="https://huixiao666.github.io/pkpk7/" class="card-button">查看</a>
+                        </div>
+                    </div>
+                </div>                      
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                © 2025 皮卡应用平台 版权所有
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // 主题切换功能
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        // 检查本地存储中的主题偏好
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        
+        // 更新图标
+        updateThemeIcon(savedTheme);
+        
+        // 切换主题函数
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            updateThemeIcon(newTheme);
+        }
+        
+        // 更新主题图标
+        function updateThemeIcon(theme) {
+            if (theme === 'dark') {
+                themeIcon.className = 'fas fa-moon';
+            } else {
+                themeIcon.className = 'fas fa-sun';
+            }
+        }
+        
+        // 添加点击事件监听器
+        themeToggle.addEventListener('click', toggleTheme);
+        
+        // 页面加载完成后显示模态窗口
+        document.addEventListener('DOMContentLoaded', function() {
+            // 显示模态窗口
+            document.getElementById('promoModal').style.display = 'flex';
+            
+            // 关闭模态窗口的功能
+            document.getElementById('modalClose').addEventListener('click', function() {
+                document.getElementById('promoModal').style.display = 'none';
+            });
+            
+            // 点击模态窗口外部也可以关闭
+            document.getElementById('promoModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.style.display = 'none';
+                }
+            });
+        });
+
+        // 导航菜单功能
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // 更新活动链接
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                // 显示对应内容区域
+                const sectionId = this.getAttribute('data-section');
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(sectionId).classList.add('active');
+                
+                // 关闭移动端菜单
+                document.getElementById('mainNav').classList.remove('show');
+            });
+        });
+        
+        // 移动端菜单切换
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('show');
+        });
+        
+        // 导航栏自动隐藏
+        let lastScrollTop = 0;
+        const header = document.getElementById('mainHeader');
+        const headerHeight = header.offsetHeight;
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > headerHeight) {
+                // 向下滚动
+                header.classList.add('hide');
+            } else {
+                // 向上滚动
+                header.classList.remove('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+        
+        // 返回顶部按钮功能
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // 为所有卡片添加点击效果
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (e.target.tagName !== 'A') {
+                    const link = card.querySelector('a');
+                    if (link) {
+                        window.location.href = link.href;
+                    }
+                }
+            });
+        });
+        
+        // 生成示例内容
+        function generateSampleContent() {
+            const sections = ['mobile', 'video', 'novel', 'comic', 'tools', 'game-sites', 
+                             'accelerator', 'image-search', 'system', 'cloud', 'network', 'other'];
+            
+            sections.forEach(section => {
+                const container = document.getElementById(section);
+                if (container) {
+                    const grid = container.querySelector('.cards-grid');
+                    if (grid) {
+                        for (let i = 1; i <= 4; i++) {
+                            grid.innerHTML += `
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="https://via.placeholder.com/300x180/6a11cb/ffffff?text=${section}+${i}" alt="${section}应用${i}">
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="card-title">${section}应用 ${i}</h3>
+                                        <p class="card-desc">这是${section}分类下的示例应用卡片，点击查看详情</p>
+                                        <div class="card-footer">
+                                            <div class="card-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>8.${i}</span>
+                                            </div>
+                                            <a href="#" class="card-button">查看</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        }
+                    }
+                }
+            });
+        }
+        
+        // 初始化页面内容
+        generateSampleContent();
+        
+        // 为统计数字添加动画效果
+        document.querySelectorAll('.stat-value').forEach(stat => {
+            const originalText = stat.textContent;
+            stat.textContent = '0';
+            
+            let counter = 0;
+            const target = originalText.replace('万', '');
+            const duration = 2000;
+            const steps = 50;
+            const increment = target / steps;
+            const timer = setInterval(() => {
+                counter += increment;
+                if (counter >= target) {
+                    stat.textContent = originalText;
+                    clearInterval(timer);
+                } else {
+                    stat.textContent = Math.round(counter) + (originalText.includes('万') ? '万' : '');
+                }
+            }, duration / steps);
+        });
+    </script>
+</body>
+</html>
             
             <div class="card">
                     <div class="card-content">
